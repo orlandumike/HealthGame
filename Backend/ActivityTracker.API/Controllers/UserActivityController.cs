@@ -86,7 +86,7 @@ namespace ActivityTracker.API.Controllers
                     Instance = HttpContext.Request?.Path
                 });
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 var result = new ObjectResult(new ProblemDetails
                 {
@@ -171,6 +171,7 @@ namespace ActivityTracker.API.Controllers
         /// the activity should be sent on the same day or retrieved on the same day in an external system
         /// </summary>
         /// <param name="activity"></param>
+        /// <param name="type"></param>
         private void AdjustHealthPoints(UserActivity activity, ActivityType type)
         {
             using (var dbContext = new ActivityTrackerDbContext())

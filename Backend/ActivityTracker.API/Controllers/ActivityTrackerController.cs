@@ -31,7 +31,7 @@ namespace ActivityTracker.API.Controllers
         ///<remarks>
         ///Example utn: 1986
         /// </remarks>
-        /// <param name="user"></param>
+        /// <param name="utn"></param>
         /// <returns></returns>
         [HttpGet]
         public async Task<ActionResult<UserDataDto>> GetAllDataByUser([FromHeader(Name = USER_HEADER)]int utn)
