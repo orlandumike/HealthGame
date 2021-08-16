@@ -8,8 +8,8 @@ const Colors: ColorsType = {
   orange: orange[500],
   red: red[600],
   teal: teal[400],
-  AssuraRed: "#e62d0a",
-  AssuraRedLighten10: "#f64f2f",
+  Red: "#e62d0a",
+  RedLighten10: "#f64f2f",
 };
 
 export default Colors;

@@ -5,8 +5,8 @@ import Colors from "colors";
 export const theme = createMuiTheme({
   palette: {
     primary: {
-      light: Colors.AssuraRedLighten10,
-      main: Colors.AssuraRed,
+      light: Colors.RedLighten10,
+      main: Colors.Red,
     },
   },
 });

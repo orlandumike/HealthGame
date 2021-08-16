@@ -17,7 +17,7 @@ const fetchData = async () => {
   });
 
   const response = await fetch(
-    "https://assurahack202012activitytrackerapi.azurewebsites.net/ActivityTracker",
+    "https://hack202012activitytrackerapi.azurewebsites.net/ActivityTracker",
     {
       headers: requestHeaders,
     }

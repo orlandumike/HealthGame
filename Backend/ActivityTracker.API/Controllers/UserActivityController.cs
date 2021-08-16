@@ -57,7 +57,7 @@ namespace ActivityTracker.API.Controllers
             catch (NotExistingUserException)
             {
                 return BadRequest(new ProblemDetails                 {
-                    Type = "https://www.assura.ch/problems/NotExistingUserException",
+                    Type = "https://www.support.ch/problems/NotExistingUserException",
                     Title = HttpStatusCode.BadRequest.ToString(),
                     Status = (int)HttpStatusCode.BadRequest,
                     Detail = $"No user with the UTN [{userUtn}] exist.",
@@ -68,7 +68,7 @@ namespace ActivityTracker.API.Controllers
             {
                 return BadRequest(new ProblemDetails
                 {
-                    Type = "https://www.assura.ch/problems/AlreadyExistingUserActivity",
+                    Type = "https://www.support.ch/problems/AlreadyExistingUserActivity",
                     Title = HttpStatusCode.BadRequest.ToString(),
                     Status = (int)HttpStatusCode.BadRequest,
                     Detail = $"An activity with the externalId [{createActivityParameter.ExternalId}] already exist and we don't allow duplicates.",
@@ -79,7 +79,7 @@ namespace ActivityTracker.API.Controllers
             {
                 return BadRequest(new ProblemDetails
                 {
-                    Type = "https://www.assura.ch/problems/NotExistingActivityTypeCode",
+                    Type = "https://www.support.ch/problems/NotExistingActivityTypeCode",
                     Title = HttpStatusCode.BadRequest.ToString(),
                     Status = (int)HttpStatusCode.BadRequest,                   
                     Detail = $"Invalid Activity Type Code : [{createActivityParameter.ActivityTypeCode}]",
@@ -90,7 +90,7 @@ namespace ActivityTracker.API.Controllers
             {
                 var result = new ObjectResult(new ProblemDetails
                 {
-                    Type = "https://www.assura.ch/problems/NotExistingActivityTypeCode",
+                    Type = "https://www.assupportsura.ch/problems/NotExistingActivityTypeCode",
                     Title = HttpStatusCode.InternalServerError.ToString(),
                     Status = (int)HttpStatusCode.InternalServerError,
                     Detail = "Invalid Activity Type Code",

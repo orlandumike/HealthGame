@@ -3,7 +3,7 @@ Health tracking activities with gamification
 
 ![Health Game](https://files.peakd.com/file/peakd-hive/orlandumike/BZXw2ZcU-Logo.jpg)
 
-Base on a Hackathon project at Assura on December 17th and 18th by:
+Base on a Hackathon project on December 17th and 18th by:
 * Heath Davies
 * Valentin Bornand
 * Dimitri Tornare
